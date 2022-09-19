@@ -50,6 +50,17 @@ button{
     align-items: center;
 }
 
+.col-2{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col{
+    width: 50%;
+}
+
+
+
 /* header */
 header{
     background-color: var(--blue);
@@ -73,6 +84,7 @@ header a{
 /* main */
 #planning, #features, #get-started{
     background-color: var(--purple);
+    color: var(--white);
 }
 
 #intro{
@@ -108,6 +120,11 @@ header a{
 
 #intro .card:first-child{
     text-align: left;
+}
+
+/* Planning Section */
+#planning img{
+    width: 300px;
 }
 
 /* footer */
