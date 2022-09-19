@@ -1,11 +1,142 @@
-/* General */
+/* Generali */
+:root{
+    --white: #fff;
+    --lightblue: #B5DDFF;
+    --black: #111111;
+    --blue: #0183FD;
+    --yellow: #FDC15F;
+    --purple: #9792E4;
+    --dark-grey: #333333;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.debug{
+    border: 1px solid black;
+    min-height: 50px;
+}
+
 body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
+}
+
+button{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.5em 2em;
+    border: 1px solid var(--blue);
+    border-radius: 30px;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* header */
+header{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1em 2rem;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.main-menu{
+    display: none;
+}
+
+header a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* main */
+#planning, #features, #get-started{
+    background-color: var(--purple);
+}
+
+#intro{
+    padding: 0 2rem;
+}
+
+/* Intro Section */
+.card{
+    background-color: var(--lightblue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2em 1em;
+}
+
+.card i, h2{
+    color: var(--blue);
+}
+
+.card i{
+    font-size: 3em;
+}
+
+.card h2{
+    font-size: 1em;
+    padding: 1em 0em;
+}
+
+.card p{
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+#intro .card:first-child{
+    text-align: left;
+}
+
+/* footer */
+footer{
+    background-color: var(--dark-grey);
+}
+
+/* Responsive */
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 750px;
+    }
+    #intro .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    #intro .card{
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+
+    #intro .card:first-child{
+        width: calc(66.66% - 1.5rem);
+    }
+}
+
+@media screen and (min-width: 992px){
+
 }
