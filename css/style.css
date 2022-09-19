@@ -236,10 +236,70 @@ section{
     background-repeat: no-repeat;
 }
 
+/* Features */
+#features{
+   background-color: var(--purple);
+   padding: 3rem 2rem;
+   color: var(--white);
+   flex-direction: column;
+}
+
+.card-features{
+    background-color: var(--purple);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+}
+
+.card i, h2{
+    color: var(--blue);
+}
+
+.card i{
+    font-size: 3em;
+}
+
+.card h2{
+    font-size: 1em;
+    padding: 1em 0em;
+}
+
+.card p{
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.card img{
+    width: 300px;
+}
+
+#intro .card:first-child{
+    text-align: left;
+}
+
+
+.col i{
+    font-size: 1em;
+    color: var(--white);
+}
+
 
 /* footer */
 footer{
     background-color: var(--dark-grey);
+    padding: 3rem 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+footer p{
+    line-height: 2rem;
+}
+
+footer a {
+    color: var(--purple);
+    text-decoration: underline;
 }
 
 /* Responsive */
