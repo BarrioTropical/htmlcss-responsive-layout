@@ -15,6 +15,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .debug{
     border: 1px solid black;
     min-height: 50px;
@@ -28,7 +34,7 @@ body{
 button{
     background-color: var(--blue);
     color: var(--white);
-    padding: 0.5em 2em;
+    padding: 14px 60px;
     border: 1px solid var(--blue);
     border-radius: 30px;
 }
@@ -57,6 +63,8 @@ button{
 
 .col{
     width: 50%;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 
@@ -65,7 +73,7 @@ button{
 header{
     background-color: var(--blue);
     color: var(--white);
-    padding: 1em 2rem;
+    padding: 1rem 2rem;
     margin-bottom: 50px;
     position: sticky;
     top: 0;
@@ -91,13 +99,18 @@ header a{
     padding: 0 2rem;
 }
 
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 /* Intro Section */
 .card{
     background-color: var(--lightblue);
     margin-bottom: 1.5rem;
     text-align: center;
     border-radius: 20px;
-    padding: 2em 1em;
+    padding: 2rem 1rem;
 }
 
 .card i, h2{
@@ -118,13 +131,40 @@ header a{
     line-height: 1.5em;
 }
 
+.card img{
+    width: 300px;
+}
+
 #intro .card:first-child{
     text-align: left;
+}
+
+
+.col i{
+    font-size: 1em;
+    color: var(--white);
 }
 
 /* Planning Section */
 #planning img{
     width: 300px;
+}
+
+.col h2{
+    color: var(--white);
+}
+
+.col-planning{
+    background-color: var(--white);
+    border-radius: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+    color: var(--black);
+    text-align: center;
+}
+
+.col-planning h2{
+    color: var(--black);
 }
 
 /* footer */
