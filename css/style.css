@@ -113,6 +113,7 @@ section{
     padding-top: 4rem 0rem;
 }
 
+
 /* Intro Section */
 #intro{
     padding: 0 2rem;
@@ -127,7 +128,7 @@ section{
     text-align: center;
 }
 
-.card i, h2{
+#intro .card i, #intro .card h2{
     color: var(--blue);
 }
 
@@ -157,15 +158,16 @@ section{
 
 
 /* Planning Section */
-.container{
-    margin: 0rem 2rem;
-}
+
 
 #planning h2, 
 #features h2, 
 #get-started h2{
-    color: var(--white);
     margin: 2rem 0rem;
+}
+
+#planning h2{
+    color: var(--white);
 }
 
 #planning img{
@@ -196,6 +198,10 @@ section{
     color: var(--dark-grey);
 }
 
+#planning .card-white h2{
+    color: var(--purple);
+}
+
 /* Testimonials */
 
 .container-testimonial{
@@ -216,6 +222,10 @@ section{
 
 #testimonials h2{
     color: var(--purple);
+}
+
+#testimonials h3{
+    color: var(--dark-grey);
 }
 
 .review{
@@ -273,9 +283,19 @@ section{
    flex-direction: column;
 }
 
-.features-card{
-    background-color: var(--white);
+#features .card-white{
+    text-align: left;
+}
+
+.card-white h2, .card-white h3{
     color: var(--purple);
+    font-weight: 700;
+}
+
+.btn-purple{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
 }
 
 .features-card p{
@@ -283,6 +303,18 @@ section{
 }
 
 /* About Us */
+#about-us .container{
+    text-align: left;
+}
+
+#about-us h2, #about-us h3{
+    color: var(--purple);
+}
+
+#about-us h3{
+    margin: 2rem 0rem;
+}
+
 #about-us img{
     border-radius: 50%;
     width: 200px;
@@ -291,6 +323,21 @@ section{
 
 #about-us p{
     margin-bottom: 2rem;
+}
+
+
+/* Get Started */ 
+#get-started h4{
+    font-weight: 200px;
+}
+
+#get-started h2{
+    color: var(--yellow);
+}
+
+#get-started button{
+    color: var(--purple);
+    font-weight: 600;
 }
 
 /* footer */
@@ -315,6 +362,10 @@ footer a {
 /* Tablet */
 @media screen and (min-width: 768px){
 
+    h2{
+        font-size: 25px;
+    }
+
     /* Intro Section */
     .container{
         max-width: 1100px;
@@ -335,11 +386,43 @@ footer a {
 
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
+        text-align: left;
+    }
+
+    .btn-blue i {
+        color: var(--white);
+        font-size: 1rem;
     }
 
     /* About Section */
     #about-us .row{
         display: flex;
+    }
+
+    .row{
+        margin: 1rem;
+    }
+
+    .row img{
+        width: 100%;
+    }
+
+    #features .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #features .card-white{
+        width: calc((100% / 2) - 2rem);
+        margin: 1rem;
+    }
+
+    .container{
+        margin: 0rem 1rem;
+    }
+
+    #about-us .col-r{
+        margin-left: 3rem;
     }
 
 }
@@ -377,11 +460,11 @@ footer a {
         align-items: flex-end;
     }
 
-    .col-1 img{
+    .col-l img{
         margin-top: 120px;
     }
 
-    .col-1 h2{
+    .col-l h2{
         margin-bottom: 100px;
     }
 
@@ -391,8 +474,9 @@ footer a {
         flex-wrap: wrap;
     }
 
-    .features-card{
-        width: calc(100% / 3);
+    .card-white{
+        width: calc((100% - 6rem) / 3);
+        margin: 1rem 1rem;
     }
 
 }
