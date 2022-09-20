@@ -198,11 +198,23 @@ section{
     color: var(--dark-grey);
 }
 
+#planning .card-white{
+    margin: 0rem 1rem;
+}
+
 #planning .card-white h2{
     color: var(--purple);
 }
 
+#about-us .container{
+    margin: 0rem 1rem;
+}
+
+
 /* Testimonials */
+
+
+
 
 .container-testimonial{
     background-color: var(--purple);
@@ -422,6 +434,11 @@ footer a {
         margin-left: 3rem;
     }
 
+    .container-testimonial{
+        text-align: center;
+    }
+    
+
 }
 
 /* Laptop and Desktop*/
@@ -470,6 +487,8 @@ footer a {
         width: 60%;
     }
 
+
+
     .col-l img{
         margin-top: 120px;
     }
@@ -500,4 +519,12 @@ footer a {
         line-height: 2em;
     }
 
+    #about-us .col-r{
+        margin-left: 0rem;
+    }
+
+    #about-us .container {
+        margin: 0 auto;
+    }
+    
 }
