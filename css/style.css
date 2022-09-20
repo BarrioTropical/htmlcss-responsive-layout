@@ -83,16 +83,16 @@ header a{
     color: var(--white);
 }
 
-#intro{
-    padding: 0 2rem;
-}
-
 section{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
 /* Intro Section */
+#intro{
+    padding: 0 2rem;
+}
+
 .card{
     background-color: var(--lightblue);
     margin-bottom: 1.5rem;
@@ -232,6 +232,25 @@ section{
    flex-direction: column;
 }
 
+.features-card{
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.features-card p{
+    color: var(--black);
+}
+
+/* About Us */
+#about-us img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#about-us p{
+    margin-bottom: 2rem;
+}
 
 /* footer */
 footer{
@@ -254,18 +273,19 @@ footer a {
 
 /* Tablet */
 @media screen and (min-width: 768px){
+
+    /* Intro Section */
     .container{
         max-width: 1100px;
     }
 
-
-
     #intro .cards{
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         margin-left: -0.75rem;
         margin-right: -0.75rem;
     }
+
     #intro .card{
         margin-left: 0.75rem;
         margin-right: 0.75rem;
@@ -275,6 +295,12 @@ footer a {
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
     }
+
+    /* About Section */
+    #about-us .row{
+        display: flex;
+    }
+
 }
 
 /* Laptop and Desktop*/
@@ -297,4 +323,34 @@ footer a {
     .menu li{
         margin-left: 2rem;
     }
+
+    /* Intro Section */
+    #intro .card:first-child{
+        display: flex;
+    }
+
+    /* Planning Section */
+    #planning .row{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .col-1 img{
+        margin-top: 120px;
+    }
+
+    .col-1 h2{
+        margin-bottom: 100px;
+    }
+
+    /* Features */
+    #features .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features-card{
+        width: calc(100% / 3);
+    }
+
 }
