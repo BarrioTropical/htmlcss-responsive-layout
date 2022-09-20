@@ -15,23 +15,27 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
 }
 
 button{
-    background-color: var(--blue);
-    color: var(--white);
-    padding: 14px 60px;
-    border: 1px solid var(--blue);
+    padding: 10px 40px;
     border-radius: 30px;
+}
+
+.btn-blue{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    margin-bottom: 2rem;
 }
 
 .container{
     max-width: 600px;
     margin: 0 auto;
+    padding: 2rem 0rem;
+    text-align: center;
 }
 
 .d-flex{
@@ -46,16 +50,30 @@ button{
     align-items: center;
 }
 
-.col-2{
-    flex-direction: row;
-    justify-content: space-between;
+h2{
+    font-size: 42px;
 }
 
-.col{
-    width: 50%;
-    flex-direction: column;
-    padding-top: 20px;
+H3{
+    font-weight: 300;
+    font-size: 25px;
 }
+
+h6{
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+p{
+    margin: 1rem 0rem;
+    line-height: 1.5rem;
+}
+
+.col-l{
+    margin-bottom: 2rem;
+}
+
+
 
 /* Header */
 header{
@@ -76,6 +94,14 @@ header a{
     text-decoration: none;
 }
 
+.btn-white{
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-white a{
+    color: var(--dark-grey);
+}
 
 /* Main */
 #planning, #features, #get-started{
@@ -84,8 +110,7 @@ header a{
 }
 
 section{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem 0rem;
 }
 
 /* Intro Section */
@@ -99,6 +124,7 @@ section{
     text-align: center;
     border-radius: 20px;
     padding: 2rem 1rem;
+    text-align: center;
 }
 
 .card i, h2{
@@ -106,12 +132,17 @@ section{
 }
 
 .card i{
-    font-size: 3em;
+    font-size: 5em;
 }
 
-.card h2{
-    font-size: 1em;
-    padding: 1em 0em;
+.btn-blue i{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.btn-blue{
+    color: var(--white);
+    padding: 0.5rem 4rem;
 }
 
 .card p{
@@ -123,24 +154,34 @@ section{
     width: 300px;
 }
 
-#intro .card:first-child{
-    text-align: left;
-}
 
-
-.col i{
-    font-size: 1em;
-    color: var(--white);
-}
 
 /* Planning Section */
+.container{
+    margin: 0rem 2rem;
+}
+
+#planning h2, 
+#features h2, 
+#get-started h2{
+    color: var(--white);
+    margin: 2rem 0rem;
+}
+
 #planning img{
     width: 300px;
 }
 
-.col h2{
-    color: var(--white);
+.card-white{
+    background-color: var(--white);
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    text-align: center;
 }
+
 
 .col-planning{
     background-color: var(--white);
@@ -151,8 +192,8 @@ section{
     text-align: center;
 }
 
-.col-planning h2{
-    color: var(--black);
+.card-white h2{
+    color: var(--dark-grey);
 }
 
 /* Testimonials */
@@ -327,6 +368,7 @@ footer a {
     /* Intro Section */
     #intro .card:first-child{
         display: flex;
+        text-align: left;
     }
 
     /* Planning Section */
