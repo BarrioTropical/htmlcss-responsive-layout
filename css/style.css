@@ -417,9 +417,6 @@ footer a {
         margin: 1rem;
     }
 
-    .container{
-        margin: 0rem 1rem;
-    }
 
     #about-us .col-r{
         margin-left: 3rem;
@@ -454,10 +451,23 @@ footer a {
         text-align: left;
     }
 
+    #intro .btn-blue i{
+        color: var(--white);
+    }
+
     /* Planning Section */
     #planning .row{
         display: flex;
         align-items: flex-end;
+    }
+
+    #planning .col-l{
+        padding: 3rem;
+        text-align: left;
+    }
+
+    #planning .col-r img{
+        width: 60%;
     }
 
     .col-l img{
@@ -474,9 +484,20 @@ footer a {
         flex-wrap: wrap;
     }
 
-    .card-white{
+    #features .card-white{
         width: calc((100% - 6rem) / 3);
         margin: 1rem 1rem;
+    }
+
+    #about-us h2, 
+    #features h2
+    #get-started h2{
+        font-size: 50px;
+    }
+
+    .card p {
+        font-size: 1.2em;
+        line-height: 2em;
     }
 
 }
